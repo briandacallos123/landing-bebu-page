@@ -1,0 +1,1 @@
+export {default as WorksView} from './view/works-view'
