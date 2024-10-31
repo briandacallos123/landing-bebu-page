@@ -87,7 +87,7 @@ body {
   margin: 0 auto;
 }
 
-@media (max-width:400px){
+@media (max-width:768px){
   .section-layout{
     min-width: 200px;
     width:100%;
