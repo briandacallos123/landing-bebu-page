@@ -3,16 +3,22 @@ import localFont from "next/font/local";
 import "./globals.css";
 import DashboardLayout from "./layout/dashboard/main";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { Roboto } from 'next/font/google';
+
+const roboto = Roboto({weight:'400', subsets:['latin']})
+
+// import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "@/components/ui/toaster"
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,10 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${roboto.className} antialiased`}
       >
         <DashboardLayout>
           {children}
+          <Toaster />
         </DashboardLayout>
       </body>
     </html>

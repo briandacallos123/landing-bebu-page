@@ -69,7 +69,7 @@ const WorksView = () => {
     // const isSm = useMediaQuery("only screen and (max-width : 768px)");
 
     return (
-        <div id="works" className="space-y-6 lg:space-y-20">
+        <div id="works" className="space-y-6 lg:space-y-20 ">
 
             <InView triggerOnce={true} threshold={1}>
                 {({ inView, ref }) => (
@@ -87,7 +87,7 @@ const WorksView = () => {
             </InView>
          
 
-            <div className="flex flex-col space-y-12 lg:space-y-72 p-4 lg:p-0">
+            <div className="flex flex-col space-y-12 lg:space-y-40 p-4 lg:p-0">
                 {worksImages?.map((item: any, index: number) => {
                     return (
                         <InView key={index} triggerOnce={true} threshold={.5}>
@@ -101,10 +101,10 @@ const WorksView = () => {
                                     <Image
                                         key={item?.id}
                                         alt="work"
-                                        height={1100}
-                                        width={1100}
+                                        height={700}
+                                        width={700}
                                         src={item?.path}
-                                        className={`${index % 2 === 1 ? 'float-right' : ''}`}
+                                        className={`${index % 2 === 1 ? 'float-right' : ''} rounded-xl`}
                                     />
                                     {/* {!isSm && <>
                                         {index % 2 === 1 && <div className="h-[750px] w-[1000px] rounded-lg bg-gray-300 opacity-6 top-14 absolute -z-30 -right-10 ">
