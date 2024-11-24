@@ -5,7 +5,7 @@ import { ContactView } from './sections/contact'
 
 const page = () => {
   return (
-    <div className="space-y-10">
+    <div className="space-y-20">
       <div className="h-[100vh] section-layout">
         <DashboardView/>
       </div>
