@@ -107,10 +107,10 @@ const WorksView = () => {
                                         className={`${index % 2 === 1 ? 'float-right' : ''} rounded-xl`}
                                     />
                                     {/* {!isSm && <> */}
-                                        {index % 2 === 1 && <div className="hidden lg:block h-[750px] w-[1000px] rounded-lg bg-gray-300 opacity-6 top-14 absolute -z-30 -right-10 ">
+                                        {/* {index % 2 === 1 && <div className="hidden lg:block h-[750px] w-[1000px] rounded-lg bg-gray-300 opacity-6 top-14 absolute -z-30 -right-10 ">
                                         </div>}
                                         {index % 2 === 0 && <div className="lg:hidden h-[750px] w-[1000px] rounded-lg bg-gray-300 opacity-6 top-14 absolute -z-30 -left-10 ">
-                                        </div>}
+                                        </div>} */}
                                     {/* </>} */}
 
                                 </motion.div>
